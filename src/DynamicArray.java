@@ -35,6 +35,8 @@ public class DynamicArray {
     }
     public  boolean isEmpty(){
         return  size == 0;
-
+    }
+    public  String toString(){
+        return  null;
     }
 }
