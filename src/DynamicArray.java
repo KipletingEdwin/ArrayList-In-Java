@@ -12,4 +12,8 @@ public class DynamicArray {
         this.capacity = capacity;
         this.array = new Object[capacity];
     }
+
+    public  void  add(Object data){
+
+    }
 }
