@@ -20,7 +20,11 @@ public class DynamicArray {
     public  void  insert(int index, Object data){
 
     }
-    public  void  delete(){
+    public  void  delete(Object data){
+
+    }
+    public  int search(Object data){
+        return  -1;
 
     }
 }
