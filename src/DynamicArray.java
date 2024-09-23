@@ -30,4 +30,7 @@ public class DynamicArray {
     private  void  grow(){
 
     }
+    private  void  shrink(){
+
+    }
 }
