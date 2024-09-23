@@ -20,4 +20,7 @@ public class DynamicArray {
     public  void  insert(int index, Object data){
 
     }
+    public  void  delete(){
+
+    }
 }
