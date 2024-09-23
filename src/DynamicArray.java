@@ -33,4 +33,7 @@ public class DynamicArray {
     private  void  shrink(){
 
     }
+    public  boolean isEmpty(){
+
+    }
 }
