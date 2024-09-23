@@ -16,4 +16,8 @@ public class DynamicArray {
     public  void  add(Object data){
 
     }
+
+    public  void  insert(int index, Object data){
+
+    }
 }
