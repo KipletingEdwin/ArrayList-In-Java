@@ -42,6 +42,10 @@ public class DynamicArray {
         return  size == 0;
     }
     public  String toString(){
-        return  null;
+        String string = "";
+        for (int i = 0; i < size; i++){
+            string += array[i] + ",";
+        }
+        return  string;
     }
 }
