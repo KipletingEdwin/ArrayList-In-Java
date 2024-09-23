@@ -34,6 +34,7 @@ public class DynamicArray {
 
     }
     public  boolean isEmpty(){
+        return  size == 0;
 
     }
 }
