@@ -25,6 +25,9 @@ public class DynamicArray {
     }
     public  int search(Object data){
         return  -1;
+    }
+
+    private  void  grow(){
 
     }
 }
