@@ -14,6 +14,11 @@ public class DynamicArray {
     }
 
     public  void  add(Object data){
+        if(size >= capacity){
+            grow();
+        }
+        array[size] = data;
+        size++;
 
     }
 
