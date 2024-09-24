@@ -7,7 +7,9 @@ public class Main {
 
         DynamicArray dynamicArray = new DynamicArray(5);
 
-        System.out.println(dynamicArray.capacity);
+        dynamicArray.add("A");
+        dynamicArray.add("B");
+        dynamicArray.add("C");
 
     }
 }
