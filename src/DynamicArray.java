@@ -47,7 +47,7 @@ public class DynamicArray {
             string += array[i] + ",";
         }
         if(string != ""){
-            string = string.substring(0, string.length() - 2);
+            string = "[" + string.substring(0, string.length() - 1) + "]";
         }
         return  string;
     }
