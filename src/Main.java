@@ -14,6 +14,8 @@ public class Main {
         dynamicArray.insert(0,"X");
         dynamicArray.delete("A");
 
+        System.out.println(dynamicArray.search("C"));
+
         System.out.println(dynamicArray);
         System.out.println("size "+ dynamicArray.size);
         System.out.println("capacity: " + dynamicArray.capacity);
