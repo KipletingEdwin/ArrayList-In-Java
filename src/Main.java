@@ -13,6 +13,7 @@ public class Main {
 
         System.out.println(dynamicArray);
         System.out.println("size "+ dynamicArray.size);
+        System.out.println("capacity: " + dynamicArray.capacity);
         System.out.println("empty: " + dynamicArray.isEmpty());
 
 
