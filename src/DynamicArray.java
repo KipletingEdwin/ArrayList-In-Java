@@ -51,6 +51,11 @@ public class DynamicArray {
 
     }
     public  int search(Object data){
+        for(int i = 0; i < size; i++){
+            if(array[i] == data){
+                return i;
+            }
+        }
         return  -1;
     }
 
