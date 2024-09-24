@@ -46,6 +46,9 @@ public class DynamicArray {
         for (int i = 0; i < size; i++){
             string += array[i] + ",";
         }
+        if(string != ""){
+            string = string.substring(0, string.length() - 2);
+        }
         return  string;
     }
 }

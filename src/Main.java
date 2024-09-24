@@ -11,5 +11,7 @@ public class Main {
         dynamicArray.add("B");
         dynamicArray.add("C");
 
+        System.out.println(dynamicArray);
+
     }
 }
