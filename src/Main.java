@@ -12,6 +12,7 @@ public class Main {
         dynamicArray.add("C");
 
         dynamicArray.insert(0,"X");
+        dynamicArray.delete("A");
 
         System.out.println(dynamicArray);
         System.out.println("size "+ dynamicArray.size);
