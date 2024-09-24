@@ -49,6 +49,9 @@ public class DynamicArray {
         if(string != ""){
             string = "[" + string.substring(0, string.length() - 1) + "]";
         }
+        else {
+            string = "[]";
+        }
         return  string;
     }
 }
