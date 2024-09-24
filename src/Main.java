@@ -12,7 +12,9 @@ public class Main {
         dynamicArray.add("C");
 
         System.out.println(dynamicArray);
+        System.out.println("size "+ dynamicArray.size);
         System.out.println("empty: " + dynamicArray.isEmpty());
+
 
     }
 }
