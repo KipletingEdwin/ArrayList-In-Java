@@ -12,6 +12,7 @@ public class Main {
         dynamicArray.add("C");
 
         System.out.println(dynamicArray);
+        System.out.println("empty: " + dynamicArray.isEmpty());
 
     }
 }
