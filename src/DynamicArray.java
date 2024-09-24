@@ -34,6 +34,15 @@ public class DynamicArray {
 
     }
     public  void  delete(Object data){
+        for(int i = 0; i < size; i++){
+            if(array[i] == data){
+                for(int j = 0; j < (size - i - 1); j++){
+                    array[i +j] = array[i + j +1];
+
+                }
+            }
+
+        }
 
     }
     public  int search(Object data){
