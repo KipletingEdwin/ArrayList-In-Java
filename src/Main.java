@@ -12,6 +12,7 @@ public class Main {
         dynamicArray.add("C");
         dynamicArray.add("D");
         dynamicArray.add("E");
+        dynamicArray.add("F");
 
 //        dynamicArray.insert(0,"X");
 //        dynamicArray.delete("A");
