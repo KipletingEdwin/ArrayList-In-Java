@@ -11,10 +11,10 @@ public class Main {
         dynamicArray.add("B");
         dynamicArray.add("C");
 
-        dynamicArray.insert(0,"X");
-        dynamicArray.delete("A");
-
-        System.out.println(dynamicArray.search("C"));
+//        dynamicArray.insert(0,"X");
+//        dynamicArray.delete("A");
+//
+//        System.out.println(dynamicArray.search("C"));
 
         System.out.println(dynamicArray);
         System.out.println("size "+ dynamicArray.size);
