@@ -14,6 +14,11 @@ public class Main {
         dynamicArray.add("E");
         dynamicArray.add("F");
 
+
+        dynamicArray.delete("A");
+        dynamicArray.delete("B");
+        dynamicArray.delete("C");
+
 //        dynamicArray.insert(0,"X");
 //        dynamicArray.delete("A");
 //
@@ -23,7 +28,5 @@ public class Main {
         System.out.println("size "+ dynamicArray.size);
         System.out.println("capacity: " + dynamicArray.capacity);
         System.out.println("empty: " + dynamicArray.isEmpty());
-
-
     }
 }

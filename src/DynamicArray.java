@@ -4,88 +4,97 @@ public class DynamicArray {
     int capacity = 10;
     Object[] array;
 
-    public  DynamicArray(){
+    public DynamicArray() {
         this.array = new Object[capacity];
     }
 
-    public  DynamicArray(int capacity){
+    public DynamicArray(int capacity) {
         this.capacity = capacity;
         this.array = new Object[capacity];
     }
 
-    public  void  add(Object data){
-        if(size >= capacity){
+    public void add(Object data) {
+        if (size >= capacity) {
             grow();
         }
         array[size] = data;
         size++;
-
     }
 
-    public  void  insert(int index, Object data){
-        if(size >= capacity){
+    public void insert(int index, Object data) {
+        if (size >= capacity) {
             grow();
         }
-        for(int i = size; i > index; i--){
+        for (int i = size; i > index; i--) {
             array[i] = array[i - 1];
         }
         array[index] = data;
         size++;
-
     }
-    public  void  delete(Object data){
-        for(int i = 0; i < size; i++){
-            if(array[i] == data){
-                for(int j = 0; j < (size - i - 1); j++){
-                    array[i +j] = array[i + j +1];
+
+    public void delete(Object data) {
+        for (int i = 0; i < size; i++) {
+            if (array[i].equals(data)) {
+                for (int j = i; j < size - 1; j++) {
+                    array[j] = array[j + 1];
                 }
-                array[size - 1] = null;
+                array[size - 1] = null; // Clear the last element
                 size--;
-                if(size <= (int)(capacity)){
+                // Shrink if the size is less than a quarter of the capacity
+                if (size < capacity / 4) {
                     shrink();
                 }
                 break;
             }
-
         }
-
     }
-    public  int search(Object data){
-        for(int i = 0; i < size; i++){
-            if(array[i] == data){
+
+    public int search(Object data) {
+        for (int i = 0; i < size; i++) {
+            if (array[i].equals(data)) {
                 return i;
             }
         }
-        return  -1;
+        return -1;
     }
 
-    private  void  grow(){
-        int newCapacity = (int)(capacity * 2);
+    private void grow() {
+        int newCapacity = (int) (capacity * 2);
         Object[] newArray = new Object[newCapacity];
 
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             newArray[i] = array[i];
         }
         capacity = newCapacity;
         array = newArray;
     }
-    private  void  shrink(){
 
+    private void shrink() {
+        if (size < capacity / 4 && capacity > 10) { // Keep a minimum capacity
+            int newCapacity = Math.max(capacity / 2, 10);
+            Object[] newArray = new Object[newCapacity];
+
+            for (int i = 0; i < size; i++) {
+                newArray[i] = array[i];
+            }
+            capacity = newCapacity;
+            array = newArray;
+        }
     }
-    public  boolean isEmpty(){
-        return  size == 0;
+
+    public boolean isEmpty() {
+        return size == 0;
     }
-    public  String toString(){
-        String string = "";
-        for (int i = 0; i < size; i++){
-            string += array[i] + ",";
+
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder("[");
+        for (int i = 0; i < size; i++) {
+            stringBuilder.append(array[i]);
+            if (i < size - 1) {
+                stringBuilder.append(", ");
+            }
         }
-        if(string != ""){
-            string = "[" + string.substring(0, string.length() - 1) + "]";
-        }
-        else {
-            string = "[]";
-        }
-        return  string;
+        stringBuilder.append("]");
+        return stringBuilder.toString();
     }
 }
