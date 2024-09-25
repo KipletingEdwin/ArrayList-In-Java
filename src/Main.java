@@ -10,6 +10,8 @@ public class Main {
         dynamicArray.add("A");
         dynamicArray.add("B");
         dynamicArray.add("C");
+        dynamicArray.add("D");
+        dynamicArray.add("E");
 
 //        dynamicArray.insert(0,"X");
 //        dynamicArray.delete("A");
