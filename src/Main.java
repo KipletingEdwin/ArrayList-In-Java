@@ -18,6 +18,7 @@ public class Main {
         dynamicArray.delete("A");
         dynamicArray.delete("B");
         dynamicArray.delete("C");
+        dynamicArray.delete("D");
 
 //        dynamicArray.insert(0,"X");
 //        dynamicArray.delete("A");
